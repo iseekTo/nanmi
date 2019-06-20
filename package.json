@@ -4,20 +4,43 @@
   "description": "Pai UD",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --mode development",
+    "build": "rimraf dist/ && webpack --mode production"
   },
   "keywords": [],
   "author": "LYX",
   "license": "MIT",
   "devDependencies": {
+    "@types/classnames": "^2.2.8",
+    "@types/react": "^16.8.20",
+    "@types/react-dom": "^16.8.4",
+    "autoprefixer": "^9.6.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "css-loader": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "postcss-loader": "^3.0.0",
+    "rimraf": "^2.6.3",
+    "style-loader": "^0.23.1",
     "typescript": "^3.5.2",
     "webpack": "^4.34.0",
     "webpack-cli": "^3.3.4",
     "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iseekTo/Patrick-Star.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iseekTo/Patrick-Star/issues"
+  },
+  "homepage": "https://github.com/iseekTo/Patrick-Star#readme"
 }

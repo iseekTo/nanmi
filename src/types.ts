@@ -1,0 +1,1 @@
+export type bin = 'large' | 'small'
