@@ -1,0 +1,36 @@
+@import './theme.less';
+.p-btn {
+    padding: 15px;
+    border-radius: 5px;
+    /** btn type style */
+    &-success {
+        background: @default-blue;
+        border: 1px solid purple;
+        color: #fff;
+        &:focus, &:active, &::selection, &:visited{
+            background: @default-antblue;
+            border: 1px solid purple;
+        }
+
+    }
+    &-fail {
+
+    }
+    &-danger {
+
+    }
+    &-none {
+
+    }
+    /** btn size style */
+    &-large {
+        padding: 10px 20px;
+        line-height: 40px;
+    }
+    &-small {
+
+    }
+    &-middle {
+
+    }
+}

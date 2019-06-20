@@ -5,11 +5,14 @@ import './assets/reset.less'
 
 export default class App extends React.Component<{}, {}> {
 
-    public render(): JSX.Element {
+    private handleClick = () => {
         console.log(this)
+    }
+
+    public render(): JSX.Element {
         return (
             <div>
-                <Bingo shope="large" />
+                <Bingo type="success" text="is btn"  size="large" click={ this.handleClick } />
             </div>
         )
     }
