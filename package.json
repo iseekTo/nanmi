@@ -1,8 +1,8 @@
 {
   "name": "patrick-star",
-  "version": "1.0.0",
-  "description": "Pai UD",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "patrick UD",
+  "main": "src/App.tsx",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server --mode development",
