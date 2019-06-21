@@ -28,10 +28,6 @@ export default class Bingo extends React.Component<IProps, {}> {
             [`${defaultclass}-${type}`]: type,
             [`${defaultclass}-${size}`]: size
         })
-        return (
-            <div>
-                <button type="button" className={btnclass} onClick={click}>{ text }</button>
-            </div>
-        )
+        return <button type="button" className={btnclass} onClick={click}>{ text }</button>
     }
 }
