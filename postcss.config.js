@@ -8,7 +8,7 @@ module.exports = {
                 "> 1%",
                 "iOS 7",
                 "last 3 iOS versions"
-            ]
+            ] 
         })
     ]
 };
