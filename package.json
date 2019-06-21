@@ -1,15 +1,21 @@
 {
-  "name": "Pai",
-  "version": "1.0.0",
-  "description": "Pai UD",
-  "main": "index.js",
+  "name": "patrick-star",
+  "version": "0.0.1",
+  "description": "patrick UD",
+  "main": "src/App.tsx",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server --mode development",
     "build": "rimraf dist/ && webpack --mode production"
   },
-  "keywords": [],
-  "author": "LYX",
+  "keywords": [
+    "partick",
+    "React",
+    "UI",
+    "components",
+    "react-component"
+  ],
+  "author": "15036830368@163.com",
   "license": "MIT",
   "devDependencies": {
     "@types/classnames": "^2.2.8",

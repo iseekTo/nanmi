@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as ReactDom from 'react-dom'
-import Bingo from './bingo'
-import './assets/reset.less'
+import Bingo from '../components/button/button'
+import '../components/style/reset.less'
 
 export default class App extends React.Component<{}, {}> {
 
@@ -20,5 +20,5 @@ export default class App extends React.Component<{}, {}> {
 
 ReactDom.render(
     <App />,
-    document.getElementById('app')
+    document.getElementById('app') as HTMLElement
 )

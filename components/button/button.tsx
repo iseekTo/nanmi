@@ -1,11 +1,11 @@
 import * as React from 'react'
 import classnames from 'classnames'
-import { p_type, size } from './types'
-import './assets/p-btn.less'
+import { buttonType, buttonSize } from '../../types/button'
+import './style/p-btn.less'
 
 interface IProps {
-    type: p_type,
-    size?: size,
+    type: buttonType,
+    size?: buttonSize,
     text: string,
     click?: () => void,
     defaultclass?: string

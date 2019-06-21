@@ -1,0 +1,46 @@
+@import './theme.less';
+.p-btn {
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 1px solid #dcdfe6;
+    /** btn type style */
+    &-success {
+        color: #409EFF;
+        background: #b3d8ff4f;
+        border-color: #b3d8ff;
+        border: 1px solid #56acf242;
+        
+        &:hover {
+            background: @default-hover;
+            color: #fff;
+            border-color: transparent;
+        }
+        &:active {
+            background: #2d8ef3;
+        }
+
+    }
+    &-fail {
+
+    }
+    &-danger {
+
+    }
+    &-none {
+        
+    }
+    /** btn size style */
+    &-large {
+        padding: 12px 30px;
+        line-height: 10px;
+        font-size: 15px;
+    }
+    &-small {
+
+    }
+    &-middle {
+
+    }
+}
