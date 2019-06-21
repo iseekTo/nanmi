@@ -1,5 +1,5 @@
 {
-  "name": "Pai",
+  "name": "patrick-star",
   "version": "1.0.0",
   "description": "Pai UD",
   "main": "index.js",
@@ -8,8 +8,14 @@
     "dev": "webpack-dev-server --mode development",
     "build": "rimraf dist/ && webpack --mode production"
   },
-  "keywords": [],
-  "author": "LYX",
+  "keywords": [
+    "partick",
+    "React",
+    "UI",
+    "components",
+    "react-component"
+  ],
+  "author": "15036830368@163.com",
   "license": "MIT",
   "devDependencies": {
     "@types/classnames": "^2.2.8",
