@@ -3,8 +3,9 @@ const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+    mode: "development", // 生产模式
     entry: {
-        app: ['./src/App.tsx'],
+        app: ['./src/index.tsx'],
         vendor: ['react', 'react-dom']
     },
     output: {
@@ -55,6 +56,8 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./src/index.html"
         }),
+
+        new webpack.optimize.ModuleConcatenationPlugin
         
     ]
 };
