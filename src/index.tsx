@@ -1,6 +1,6 @@
 import * as React from 'react'
 import * as ReactDom from 'react-dom'
-import Bingo from '../components/button/button'
+import Bingo from '../components/button/index'
 import '../components/style/reset.less'
 
 export default class App extends React.Component<{}, {}> {

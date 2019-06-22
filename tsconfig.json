@@ -17,6 +17,6 @@
     "preserveConstEnums": true
   },
   "include": [
-    "./src/**/*", "components/button/button.tsx"
+    "./components/**/*"
   ]
 }
