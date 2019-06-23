@@ -1,11 +1,11 @@
 const path = require('path');
-const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
+// 以下配置仅仅为本地开发所用 真实发布代码使用babel编译并输出到lib文件夹
 module.exports = {
-    mode: "development", // 生产模式
+    mode: "development", // 开发模式
     entry: {
-        app: ['./src/index.tsx'],
+        app: ['./examples/App.tsx'],
         vendor: ['react', 'react-dom']
     },
     output: {
@@ -54,10 +54,7 @@ module.exports = {
 
     plugins: [
         new HtmlWebPackPlugin({
-            template: "./src/index.html"
+            template: "./examples/index.html"
         }),
-
-        new webpack.optimize.ModuleConcatenationPlugin
-        
     ]
 };

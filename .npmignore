@@ -3,5 +3,5 @@ components
 src
 webpack.config.js
 .babelrc
-src
+examples
 node_modules
