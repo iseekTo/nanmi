@@ -11,7 +11,7 @@ interface IProps {
     defaultclass?: string
 }
 
-export default class Bingo extends React.Component<IProps, {}> {
+export default class Button extends React.Component<IProps, {}> {
     static defaultProps = {
         type: 'none',
         size: 'middle',

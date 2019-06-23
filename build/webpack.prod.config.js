@@ -1,9 +1,11 @@
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 
 module.exports = {
   mode: "production",
   entry: {
-    "Patrick": path.resolve(__dirname, '../src/index.tsx')
+    "Patrick": path.resolve(__dirname, '../src/index.ts')
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
@@ -33,19 +35,25 @@ module.exports = {
       {
         test: /\.less$/,
         use: [
-          { loader: "style-loader" },
-          { loader: "css-loader" },
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'postcss-loader',
           {
-            loader: "less-loader",
+            loader: 'less-loader',
             options: {
-              strictMath: true,
-              noIeCompat: true
+              javascriptEnabled: true
             }
           }
         ]
-      },
+      }
+
     ]
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].[hash:8].css'
+    }),
+  ],
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
   },
