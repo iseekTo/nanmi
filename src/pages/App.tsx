@@ -1,7 +1,9 @@
 import * as React from 'react'
 import Button from '../../components/Button/Button'
 
-class App extends React.Component<{}, {}> {
+
+interface AppState {};
+class App extends React.Component<{}, AppState> {
 
     handleClick = (e: any) => {
         console.dir(e)
@@ -18,7 +20,7 @@ class App extends React.Component<{}, {}> {
                     style={{ padding: '20px' }}
                     icon="emmm"
                 >
-                    萨尔撒多11111
+                    萨尔撒多
                 </Button>
             </div>
         )
