@@ -1,7 +1,12 @@
 /node_modules
 
 /config
+
+#production
 /dist
+
+#components
+/lib
 
 # misc
 .DS_Store
