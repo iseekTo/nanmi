@@ -2,7 +2,7 @@ import * as React from 'react'
 import './style/1.css'
 import { ButtonProps } from 'types/button';
 
-interface iState {}
+interface iState {}  // 1
 
 class Button extends React.Component<ButtonProps, iState> {
     
