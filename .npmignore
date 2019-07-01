@@ -1,7 +1,0 @@
-build
-components
-src
-webpack.config.js
-.babelrc
-examples
-node_modules

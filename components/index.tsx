@@ -1,6 +1,4 @@
-export { default as Button } from './button/index'
-import Button from './button/index'
+import './Button/style/1.css'
 
-module.exports = {
-  Button,
-}
+export { default as Button } from './Button/Button'
+ 
