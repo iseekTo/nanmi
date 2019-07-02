@@ -1,16 +1,29 @@
 import * as React from 'react'
-import './style/1.css'
+import classnames from 'classnames'
 import { ButtonProps } from 'types/button';
+import './style/p-btn.less'
 
-interface iState {}  // 1
 
-class Button extends React.Component<ButtonProps, iState> {
-    
-    render(): JSX.Element {
+class Button extends React.Component<ButtonProps, any> {
+    constructor(props: ButtonProps) {
+        super(props)
+    }
+    static defaultProps = {
+        type: 'none',
+        size: 'middle',
+        defaultcls: 'p-btn'
+    }
+    public render() {
+        const { types, size, defaultcls, className } = this.props
+        const btnclass = classnames(defaultcls,{
+            [`${defaultcls}`]: defaultcls,
+            [`${defaultcls}-${types}`]: types,
+            [`${defaultcls}-${size}`]: size,
+            className
+        })
+        
         return (
-            <div className="btn">
-                <h1 {...this.props}></h1>
-            </div>
+            <button className={btnclass} {...this.props}></button>
         )
     }
 }
