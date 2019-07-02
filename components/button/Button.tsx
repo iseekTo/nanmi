@@ -16,4 +16,3 @@ class Button extends React.Component<ButtonProps, iState> {
 }
 
 export default Button
-// 5.6
