@@ -15,11 +15,10 @@ class Button extends React.Component<ButtonProps, any> {
     }
     public render() {
         const { types, size, defaultcls, className } = this.props
-        const btnclass = classnames(defaultcls,{
+        const btnclass = classnames(defaultcls, className, {
             [`${defaultcls}`]: defaultcls,
             [`${defaultcls}-${types}`]: types,
             [`${defaultcls}-${size}`]: size,
-            className
         })
         
         return (
@@ -27,5 +26,7 @@ class Button extends React.Component<ButtonProps, any> {
         )
     }
 }
+
+// declare const Buttons: Button tsStudio
 
 export default Button
