@@ -1,9 +1,8 @@
 import * as React from 'react'
 import Button from '../../components/Button/Button'
 
-interface AppState {};
-class App extends React.Component<{}, AppState> {
-
+class App extends React.Component<{}, {}> {
+    
     render(): JSX.Element {
         return (
             <div className="container" style={{ margin: '10px' }}>
@@ -12,7 +11,7 @@ class App extends React.Component<{}, AppState> {
                     size="large"
                     icon="emmm"
                 >
-                    萨尔撒多111
+                    jjsjdk
                 </Button>
             </div>
         )
