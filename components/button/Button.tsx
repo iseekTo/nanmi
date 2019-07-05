@@ -1,10 +1,10 @@
 import * as React from 'react'
 import classnames from 'classnames'
-import { ButtonProps } from 'types/button';
+import { ButtonProps } from '../../types/button';
 import './style/p-btn.less'
 
 
-class Button extends React.Component<ButtonProps, any> {
+export default class Button extends React.Component<ButtonProps, any> {
     constructor(props: ButtonProps) {
         super(props)
     }
@@ -27,6 +27,3 @@ class Button extends React.Component<ButtonProps, any> {
     }
 }
 
-// declare const Buttons: Button tsStudio
-
-export default Button

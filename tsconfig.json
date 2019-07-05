@@ -1,24 +1,24 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
-    "strictNullChecks": true,
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "jsx": "react",
-    "resolveJsonModule": true,
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "noImplicitAny": true,
-    "target": "es6",
     "outDir": "./lib",
+    "jsx": "react",
+    "module": "commonjs",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
     "lib": [
-      "dom",
-      "es6"
+      "es2015",
+      "dom"
     ]
   },
   "exclude": [
-    "node_modules",
-    "lib"
+    "src"
+  ],
+  "include": [
+    "./components"
   ]
 }
