@@ -1,8 +1,8 @@
 {
   "name": "nanmi",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "main": "dist/nanami.js",
-  "typings": "./lib",
+  "typings": "lib/index.d.ts",
   "author": {
     "name": "LYB"
   },
@@ -23,7 +23,7 @@
     "start": "webpack-dev-server --config config/webpack.dev.conf.js",
     "prod": "rimraf dist && webpack --config config/webpack.prod.conf.js",
     "test": "jest --watch",
-    "tsb": "rimraf lib && tsc",
+    "tsb": "rimraf lib && tsc -d",
     "lib": "rimraf lib &&  webpack --config config/webpack.lib.conf.js"
   },
   "devDependencies": {
