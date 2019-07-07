@@ -1,12 +1,12 @@
 import * as React from 'react'
-import Button from '../../components/button/Button'
+import Button from '../../components/button'
 
 class App extends React.Component<{}, {}> {
     
     render(): JSX.Element {
         return (
             <div className="container" style={{ margin: '10px' }}>
-                <Button 
+                <Button
                     types="success"
                     size="large"
                     icon="emmm"

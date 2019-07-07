@@ -1,5 +1,5 @@
 import * as React from 'react'
-import './style/2.css'; 
+import './style/index'; 
 
 class Icon extends React.Component<{}, {}> {
     render(): JSX.Element {
