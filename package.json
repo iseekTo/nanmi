@@ -23,7 +23,7 @@
     "start": "webpack-dev-server --config config/webpack.dev.conf.js",
     "prod": "rimraf dist && webpack --config config/webpack.prod.conf.js",
     "test": "jest --watch",
-    "tsb": "rimraf lib && tsc -d",
+    "tsb": "rimraf lib && tsc -d && npm run lib",
     "deploy": "gh-pages -d build",
     "lib": "webpack --config config/webpack.lib.conf.js"
   },
