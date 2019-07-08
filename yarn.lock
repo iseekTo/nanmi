@@ -7670,12 +7670,6 @@ webpack-fix-style-only-entries@^0.3.0:
   version "0.3.0"
   resolved "https://registry.npm.taobao.org/webpack-fix-style-only-entries/download/webpack-fix-style-only-entries-0.3.0.tgz#bdce1a2b4aff76e9a9e4c863cee4c990e9ebb6d6"
 
-webpack-glob-entry@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.npm.taobao.org/webpack-glob-entry/download/webpack-glob-entry-2.1.1.tgz#de21e0bfe062f8a220c0c64333b77236cb8a5f91"
-  dependencies:
-    glob "^7.1.1"
-
 webpack-log@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/webpack-log/download/webpack-log-1.2.0.tgz#a4b34cda6b22b518dbb0ab32e567962d5c72a43d"

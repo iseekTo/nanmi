@@ -3,6 +3,7 @@
   "compilerOptions": {
     "outDir": "./lib",
     "jsx": "react",
+    "baseUrl": "",
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
@@ -11,12 +12,13 @@
     "lib": [
       "es2015",
       "dom"
-    ]
+    ],
+    
   },
   "exclude": [
     "src"
   ],
   "include": [
-    "./components"
+    "./components/**/*"
   ]
 }
