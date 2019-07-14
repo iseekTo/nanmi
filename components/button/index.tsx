@@ -15,11 +15,12 @@ export default class Button extends React.Component<ButtonProps, any> {
     }
     public render() {
         const { types, size, defaultcls, className } = this.props
-        const btnclass = classnames(defaultcls, className, {
+        
+        const btnclass = classnames({
             [`${defaultcls}`]: defaultcls,
             [`${defaultcls}-${types}`]: types,
             [`${defaultcls}-${size}`]: size,
-        })
+        }, className)
         
         return (
             <button className={btnclass} {...this.props}></button>
