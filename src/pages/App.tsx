@@ -9,7 +9,7 @@ class App extends React.Component<{}, {}> {
                 <Button
                     types="success"
                     size="large"
-                    icon="emmm"
+                    className="sa"
                 >
                     jdjk
                 </Button>

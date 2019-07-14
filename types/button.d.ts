@@ -12,4 +12,3 @@ export interface ButtonProps extends React.HtmlHTMLAttributes<{}> {
     icon?: string | React.ReactNode,
     className?: string
 }
-

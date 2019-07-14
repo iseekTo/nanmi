@@ -23,7 +23,7 @@
     "start": "webpack-dev-server --config config/webpack.dev.conf.js",
     "prod": "rimraf dist && webpack --config config/webpack.prod.conf.js",
     "test": "jest --watch",
-    "tsb": "rimraf lib && tsc -d",
+    "tsb": "rimraf lib && tsc -d && npm run lib",
     "deploy": "gh-pages -d build",
     "lib": "webpack --config config/webpack.lib.conf.js"
   },
@@ -62,7 +62,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "antd": "^3.20.0",
+    "antd": "^3.20.1",
     "classnames": "^2.2.6",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
