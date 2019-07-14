@@ -7,11 +7,11 @@ class App extends React.Component<{}, {}> {
         return (
             <div className="container" style={{ margin: '10px' }}>
                 <Button
-                    types="success"
+                    types='danger'
                     size="large"
-                    className="sa"
+                    className="sa hid"
                 >
-                    jdjk
+                    哈哈哈哈哈
                 </Button>
             </div>
         )
