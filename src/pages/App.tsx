@@ -3,15 +3,16 @@ import Button from '../../components/button'
 
 class App extends React.Component<{}, {}> {
     
+
     render(): JSX.Element {
         return (
             <div className="container" style={{ margin: '10px' }}>
                 <Button
-                    types="success"
+                    types='danger'
                     size="large"
-                    className="sa"
+                    className="sa hid"
                 >
-                    jdjk
+                    哈哈哈哈哈
                 </Button>
             </div>
         )
