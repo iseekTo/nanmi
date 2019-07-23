@@ -1,4 +1,2 @@
 import './reset.less';
-
-
-import { Button } from 'antd' 
+import './components.less';

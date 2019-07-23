@@ -1,1 +1,1 @@
-import './p-btn.less';
+import './button.css';
