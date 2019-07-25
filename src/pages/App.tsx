@@ -8,6 +8,7 @@ class App extends React.Component<{}, {}> {
         return (
             <div className="container" style={{ margin: '10px' }}>
                 <Button
+                    style={{ backgroundColor: 'purple', color: '#fff'}}
                     types='danger'
                     size="large"
                     className="sa hid"
