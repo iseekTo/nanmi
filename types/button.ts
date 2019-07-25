@@ -10,5 +10,6 @@ export interface ButtonProps extends React.HtmlHTMLAttributes<{}> {
     diasbled?: boolean
     loading?: boolean
     icon?: string | React.ReactNode,
-    className?: string
+    className?: string,
+    style?: React.CSSProperties
 }
