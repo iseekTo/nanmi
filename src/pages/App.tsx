@@ -12,7 +12,7 @@ class App extends React.Component<{}, {}> {
             <div className="container" style={{ margin: '10px' }}>
                 <Button
                     onClick={this.click.bind(this)}
-                    types='danger'
+                    types='success'
                     size='large'
                     className='sa hid'
                 >
