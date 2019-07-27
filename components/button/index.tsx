@@ -7,15 +7,26 @@ import './style/p-btn.less'
 export default class Button extends React.Component<ButtonProps, any> {
     constructor(props: ButtonProps) {
         super(props)
-
     }
+
     static defaultProps = {
         type: 'none',
         size: 'middle',
         defaultcls: 'p-btn'
     }
+    
     public render() {
-        const { types, size, defaultcls, style ,className, diasbled, loading } = this.props
+        const { 
+            types, 
+            size, 
+            defaultcls, 
+            style,
+            className, 
+            diasbled, 
+            loading, 
+            onClick,
+            children
+         } = this.props
         
         const btnclass = {
             className: classnames(defaultcls, className, {
@@ -23,12 +34,13 @@ export default class Button extends React.Component<ButtonProps, any> {
                 [`${defaultcls}-${types}`]: types,
                 [`${defaultcls}-${size}`]: size,
             }),
-            style
+            style,
+            onClick
         }
 
 
         return (
-            <button {...btnclass} >{this.props.children}</button>
+            <button {...btnclass} >{children}</button>
         )
     }
 }
