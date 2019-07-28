@@ -1,6 +1,6 @@
 {
   "name": "nanmi",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "main": "dist/nanmi.js",
   "typings": "lib/index.d.ts",
   "author": {
