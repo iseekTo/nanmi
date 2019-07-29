@@ -26,9 +26,9 @@ export default class Button extends React.Component<ButtonProps, any> {
             loading, 
             onClick,
             children
-         } = this.props
+        } = this.props
         
-        const btnclass = {
+        const baseProps = {
             className: classnames(defaultcls, className, {
                 [`${defaultcls}`]: defaultcls,
                 [`${defaultcls}-${types}`]: types,
@@ -40,7 +40,7 @@ export default class Button extends React.Component<ButtonProps, any> {
 
 
         return (
-            <button {...btnclass} >{children}</button>
+            <button {...baseProps} >{children}</button>
         )
     }
 }
