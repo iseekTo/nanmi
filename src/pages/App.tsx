@@ -4,7 +4,7 @@ import Button from '../../components/button'
 class App extends React.Component<{}, {}> {
     
     click(e){
-        console.log(e, 'button event')
+        console.log(e, 'button event   ')
     }
 
     render(): JSX.Element {

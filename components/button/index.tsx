@@ -38,7 +38,6 @@ export default class Button extends React.Component<ButtonProps, any> {
             onClick
         }
 
-
         return (
             <button {...baseProps} >{children}</button>
         )
