@@ -1,9 +1,10 @@
 import * as React from 'react'
 import Button from '../../components/button'
 
+
 class App extends React.Component<{}, {}> {
-    
-    click(e){
+
+    click(e) {
         console.log(e, 'button event   ')
     }
 
