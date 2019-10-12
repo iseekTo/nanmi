@@ -16,7 +16,7 @@ class App extends React.Component<{}, {}> {
                     size='large'
                     className='sa hid'
                 >
-                    哈哈哈哈哈
+                    ojbk
                 </Button>
             </div>
         )

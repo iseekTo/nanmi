@@ -11,7 +11,7 @@ class Icon extends React.Component<IconProps, {}> {
     render(): JSX.Element {
         const {
             t
-        } = this.props
+        } = this.props  
         
         return (
             <div className="container">

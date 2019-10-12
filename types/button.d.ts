@@ -6,7 +6,7 @@ export interface ButtonProps extends React.HtmlHTMLAttributes<{}> {
     types?: buttonType
     size?: buttonSize
     // onClick?: (event: any) => void
-    onClick?: React.EventHandler<React.MouseEvent>,
+    onClick?: React.EventHandler<React.MouseEvent>
     defaultcls?: string
     diasbled?: boolean
     loading?: boolean
