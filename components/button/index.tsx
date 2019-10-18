@@ -5,6 +5,7 @@ import './style/p-btn.less'
 
 
 export default class Button extends React.Component<ButtonProps, any> {
+
     constructor(props: ButtonProps) {
         super(props)
     }
